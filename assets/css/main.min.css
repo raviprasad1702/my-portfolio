@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scrollbar-color: #e02f6b #fff;
+  scrollbar-width: thin;
+}
+
+body {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#efa2b4), to(#aef1ee));
+  background: linear-gradient(to bottom right, #efa2b4, #aef1ee);
+  font-size: 16px;
+  font-weight: 300;
+  color: #18293c;
+  line-height: 1.5;
+  overflow-x: hidden;
+  padding: 5vh 15px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #cddc39;
+  z-index: -1;
+  opacity: 0.12;
+  height: 100%;
+  width: 100%;
+}
+
+body h1,
+body h2 {
+  font-weight: 600;
+}
+
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-weight: 500;
+}
+
+body main {
+  max-width: 1280px;
+  margin: auto;
+}
+
+body main #section {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  min-height: calc(100vh - 10vh);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+body main #section .container {
+  padding: 0 40px;
+  width: 100%;
+}
+
+body main #section .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .btn {
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 100vw;
+  display: inline-block;
+  font-weight: 500;
+  color: #e02f6b;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: color 250ms ease;
+  transition: color 250ms ease;
+}
+
+body main .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #e02f6b;
+  z-index: -1;
+  -webkit-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
+}
+
+body main .btn:hover {
+  color: #fff;
+}
+
+body main .btn:hover::before {
+  width: 100%;
+}
+
+body img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e02f6b;
+}
+
+.home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-section-text, .home-section-image {
+  width: calc(50% - 30px);
+  padding: 15px;
+}
+
+.home-section-text p {
+  font-size: 18px;
+}
+
+.home-section-text h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.home-section-text h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin: 0 0 30px;
+}
+
+.home-section-text .btn {
+  margin: 0 15px 15px 0;
+}
+
+.home-section-image-box {
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 8px solid rgba(255, 255, 255, 0.4);
+  border-radius: 100vh;
+  margin: auto;
+}
+
+.home-section-image-box img {
+  width: 100%;
+  border-radius: 100vh;
+}
